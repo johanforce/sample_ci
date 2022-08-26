@@ -41,4 +41,4 @@ jobs:
           curl \
             -H "Content-Type: application/json" \
             -X POST "${{secrets.SHARE_CHAT_GOOGLE_KEY}}" \
-            --data {"text" : "https://dply.me/9bvclj"}
+            --data {"text" : "${{secrets.LINK_BUILD_APP}}"}
