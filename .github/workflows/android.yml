@@ -41,4 +41,4 @@ jobs:
           curl \
             -H "Content-Type: application/json" \
             -X POST "${{secrets.SHARE_CHAT_GOOGLE_KEY}}" \
-            --data {\"text\":\"https://dply.me/9bvclj\"}
+            --data "{\"cards\": [{\"sections\":[{\"widgets\":[{\"image\":{\"imageUrl\":\"${DEPLOYGATE_DISTRIBUTION_QR_CODE_IMAGE_URL}\",\"altText\":\"\",\"onClick\":{\"openLink\":{\"url\":\"${DEPLOYGATE_SHARING_URL}\"}}}}]},{\"widgets\":[{\"buttons\":[{\"textButton\":{\"text\":\"DOWNLOAD\",\"onClick\":{\"openLink\":{\"url\":\"${DEPLOYGATE_SHARING_URL}\"}}}}]}]}],\"header\":{\"title\":\"The new version is released\",\"imageUrl\":\"https://freecodegenerators.azureedge.net/images/sad-capoo.gif\",\"imageStyle\":\"AVATAR\"}}]}"
