@@ -41,4 +41,4 @@ jobs:
           curl \
             -H "Content-Type: application/json" \
             -X POST "${{secrets.SHARE_CHAT_GOOGLE_KEY}}" \
-            --data "{\"cards\": [{\"sections\":[{\"widgets\":[{\"image\":{\"imageUrl\":\"${{SHARE_IMAGE_URL}}\",\"altText\":\"\",\"onClick\":{\"openLink\":{\"url\":\"${{DEPLOYGATE_SHARING_URL}}\"}}}}]},{\"widgets\":[{\"buttons\":[{\"textButton\":{\"text\":\"DOWNLOAD\",\"onClick\":{\"openLink\":{\"url\":\"${{DEPLOYGATE_SHARING_URL}}\"}}}}]}]}],\"header\":{\"title\":\"The new version is released\",\"imageUrl\":\"https://freecodegenerators.azureedge.net/images/sad-capoo.gif\",\"imageStyle\":\"AVATAR\"}}]}"
+            --data "{\"cards\": [{\"sections\":[{\"widgets\":[{\"image\":{\"imageUrl\":\"${{secrets.SHARE_IMAGE_URL}}\",\"altText\":\"\",\"onClick\":{\"openLink\":{\"url\":\"${{secrets.DEPLOYGATE_SHARING_URL}}\"}}}}]},{\"widgets\":[{\"buttons\":[{\"textButton\":{\"text\":\"DOWNLOAD\",\"onClick\":{\"openLink\":{\"url\":\"${{secrets.DEPLOYGATE_SHARING_URL}}\"}}}}]}]}],\"header\":{\"title\":\"The new version is released\",\"imageUrl\":\"https://freecodegenerators.azureedge.net/images/sad-capoo.gif\",\"imageStyle\":\"AVATAR\"}}]}"
